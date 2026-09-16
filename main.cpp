@@ -117,3 +117,79 @@ int main() {
 
     return 0;
 }
+
+
+
+/*
+#include <iostream>
+#include <string>
+#include <limits>
+#include <format>
+
+int main() {
+  setlocale(LC_ALL, "");
+
+
+  std::cout << "Enter number 1: ";
+  std::string c1;
+  float n1;
+  std::cin >> c1;
+  try {
+      n1 = std::stof(c1);
+  } catch (std::out_of_range& e) {
+      std::cout << "big number.\n";
+      return 0;
+  } catch (std::invalid_argument& e) {
+      std::cout << "not number\n";
+      return 0;
+  };
+  std::cout << "\n";
+  // Очистка буфера ввода
+  std::cin.clear();
+  std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+
+  std::cout << "Enter number 2: ";
+  std::string c2;
+  float n2;
+  std::cin >> c2;
+  try {
+      n2 = std::stof(c2);
+  }
+  catch (std::out_of_range& e) {
+      std::cout << "gi number.\n";
+      return 0;
+  }
+  catch (std::invalid_argument& e) {
+      std::cout << "Вnot number\n";
+      return 0;
+  };
+  std::cout << "\n";
+  // Очистка буфера ввода
+  std::cin.clear();
+  std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+  std::cout << "Enter operator(+, -, *, /): ";
+  std::string ope;
+  std::cin >> ope;
+  if (ope == "+") {
+	  std::cout << "Result: " << n1 << " " << ope << " " << n2 << " = " << n1 + n2 << "\n";
+  } else if (ope == "-") {
+      std::cout << "Result: " << n1 << " " << ope << " " << n2 << " = " << n1 - n2 << "\n";
+  } else if (ope == "*") {
+	  std::cout << "Result: " << n1 << " " << ope << " " << n2 << " = " << n1 * n2 << "\n";
+  } else if (ope == "/") {
+	  if (n2 == 0) {
+		  std::cout << "not / 0.\n";
+	  }
+	  else {
+		  std::cout << "Result: " << n1 << " " << ope << " " << n2 << " = " << n1 / n2 << "\n";
+	  };
+  }
+  else {
+	  std::cout << "ne znay takoi operator\n";
+  };
+
+  return 0;
+};
+*/
