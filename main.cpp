@@ -1,31 +1,3 @@
-/*
-
-#include <iostream>
-
-int main() {
-    std::cout << "Enter email: ";
-    std::string email;
-    std::cin >> email;
-    std::cout << "\n";
-
-    std::cout << "Enter password: ";
-    std::string password;
-    std::cin >> password;
-    std::cout << "\n";
-
-    if (email == "abc@gmail.com" && password == "123") {
-        std::cout << "Welcome\n";
-    }
-    else {
-        std::cout << "NOT\n";
-    };
-
-    return 0;
-}
-
-*/
-
-
 #include <iostream>
 #include <string>
 #include <vector>
